@@ -14,7 +14,12 @@ module.exports = function(cb) {
         debug(err);
         return cb(err);
       }
-      return fn.apply(null, args);
+      try {
+        return fn.apply(null, args);
+      } catch (err) {
+        debug(err);
+        return cb(err);
+      }
     };
   };
 };
