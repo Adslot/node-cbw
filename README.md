@@ -1,4 +1,5 @@
 cbw
+[![Build Status](https://api.travis-ci.org/Adslot/node-cbw.png)](https://travis-ci.org/Adslot/node-cbw)
 ========
 
 Callback wrapper for cleaner async code. Main benefit is you don't need to write `if (err) return cb(err)`.
