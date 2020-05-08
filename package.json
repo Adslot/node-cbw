@@ -4,7 +4,12 @@
   "description": "callback wrapper",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -R spec"
+    "test": "mocha -R spec",
+    "postversion": "git push -u origin $(git rev-parse --abbrev-ref HEAD) --follow-tags && npm publish && echo '…released.'",
+    "preversion": "echo 'Releasing…' && npm ci",
+    "release:major": "npm version major -m 'build: release major version %s'",
+    "release:minor": "npm version minor -m 'build: release minor version %s'",
+    "release:patch": "npm version patch -m 'build: release patch version %s'"
   },
   "keywords": [
     "callback",
