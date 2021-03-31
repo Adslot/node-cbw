@@ -1,6 +1,6 @@
 {
   "name": "cbw",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "callback wrapper",
   "main": "index.js",
   "scripts": {
