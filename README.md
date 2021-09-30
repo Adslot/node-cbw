@@ -2,7 +2,7 @@ cbw
 ========
 
 [![npm version](https://badge.fury.io/js/cbw.svg)](https://badge.fury.io/js/cbw)
-![Build Status](https://github.com/Adslot/node-cbw/workflows/Node.js%20CI/badge.svg)
+![Build Status](https://github.com/Adslot/node-cbw/actions/workflows/node.js.yml/badge.svg)
 
 Callback wrapper for cleaner async code. Main benefit is you don't need to write `if (err) return cb(err)`.
 
