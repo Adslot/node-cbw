@@ -19,7 +19,7 @@
   "author": "Dmitry Shirokov <deadrunk@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "mocha": "^8.4.0"
+    "mocha": "^9.1.2"
   },
   "repository": {
     "type": "git",
