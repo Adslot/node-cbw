@@ -26,6 +26,6 @@
     "url": "https://github.com/Adslot/node-cbw.git"
   },
   "engines": {
-    "node": "^20"
+    "node": "^22"
   }
 }
