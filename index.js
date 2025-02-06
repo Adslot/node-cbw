@@ -1,13 +1,12 @@
-
-var debug = function(err) {
+var debug = function (err) {
   if (process.env.DEBUG)
+    // eslint-disable-next-line no-console
     console.info('Caught error', err, err.stack);
 };
 
-
-module.exports = function(cb) {
-  return function(fn) {
-    return function() {
+module.exports = function (cb) {
+  return function (fn) {
+    return function () {
       var err = arguments[0],
         args = 2 <= arguments.length ? [].slice.call(arguments, 1) : [];
       if (err) {
