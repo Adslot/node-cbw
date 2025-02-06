@@ -4,6 +4,10 @@
   "description": "callback wrapper",
   "main": "index.js",
   "scripts": {
+    "format": "prettier ''**/*.js' --write",
+    "lint:eslint": "eslint '**/*.js'",
+    "lint:prettier": "prettier '**/*.js' --check",
+    "lint": "npm run lint:eslint && npm run lint:prettier",
     "test": "mocha -R spec",
     "postversion": "git push -u origin $(git rev-parse --abbrev-ref HEAD) --follow-tags && npm publish && echo '…released.'",
     "preversion": "echo 'Releasing…' && npm ci",
@@ -19,11 +23,21 @@
   "author": "Dmitry Shirokov <deadrunk@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "mocha": "^11.0.1"
+    "eslint": "^9.19.0",
+    "eslint-config-adslot": "^2.0.2",
+    "globals": "^15.14.0",
+    "mocha": "^11.0.1",
+    "prettier": "^3.4.2"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/Adslot/node-cbw.git"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "arrowParens": "always",
+    "printWidth": 120
   },
   "engines": {
     "node": "^22"
