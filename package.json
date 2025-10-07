@@ -23,9 +23,8 @@
   "author": "Dmitry Shirokov <deadrunk@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^9.30.0",
-    "eslint-config-adslot": "^2.0.2",
-    "globals": "^16.4.0",
+    "eslint": "^9.37.0",
+    "eslint-config-adslot": "^2.1.1",
     "mocha": "^11.7.4",
     "prettier": "^3.6.2"
   },
